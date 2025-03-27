@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+
+    <style>
+        /* Styles that define highlighted text */
+        .yellow-emphasis {
+            background-color: yellow;
+        }
+
+        .blue-emphasis {
+            background-color: blue;
+        }
+
+        .green-emphasis {
+            background-color: green;
+        }
+
+        .red-underline {
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+
+        main {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="actions">
+            <button id="normal-select">Select</button>
+            <button id="yellow-emphasis">Yellow Emphasis</button>
+            <button id="blue-emphasis">Blue Emphasis</button>
+            <button id="green-emphasis">Green Emphasis</button>
+            <button id="red-underline">Red Underline</button>
+            <button id="delete">Delete Selection</button>
+            <button id="undo">Undo</button>
+            <button id="redo">Redo</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="text" contenteditable="false">
+            <p>This is where you should insert text via javascript with innerHTML. This is sample text. Select some of this text to highlight.</p>
+        </div>
+    </main>
+
+    <script src="editor.js"></script>
+</body>
+</html>
